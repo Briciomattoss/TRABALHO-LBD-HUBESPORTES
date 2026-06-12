@@ -9,6 +9,8 @@ A motivação principal é democratizar o acesso à informação sobre práticas
 * Fabrício Matos de Sousa
 * Daniel Fernandes
 * Gabriel Ferreira
+* Alberto Maciel
+
 
 ## 🎓 Contexto Acadêmico
 Projeto desenvolvido para a disciplina de **Laboratório de Banco de Dados** (3º Semestre do curso de Análise e Desenvolvimento de Sistemas) da **Universidade Católica de Brasília (UCB)**.

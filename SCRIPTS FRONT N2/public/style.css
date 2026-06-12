@@ -1,0 +1,165 @@
+:root {
+    --primary-color: #1e3c72;
+    --secondary-color: #2a5298;
+    --background-color: #f4f6f9;
+    --card-background: #ffffff;
+    --text-color: #333333;
+    --success-color: #2ecc71;
+    --danger-color: #e74c3c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+main {
+    flex: 1;
+    max-width: 1200px;
+    width: 100%;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.info-section {
+    margin-bottom: 2rem;
+}
+
+.info-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.card {
+    background: var(--card-background);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    border-top: 5px solid var(--primary-color);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.badge {
+    display: inline-block;
+    background-color: #e1e8f5;
+    color: var(--primary-color);
+    padding: 0.25rem 0.6rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.vagas-info p {
+    margin: 0.5rem 0;
+    font-size: 0.95rem;
+}
+
+.status {
+    padding: 0.4rem;
+    border-radius: 4px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.status.disponivel {
+    background-color: rgba(46, 204, 113, 0.15);
+    color: #27ae60;
+}
+
+.status.lotado {
+    background-color: rgba(231, 76, 60, 0.15);
+    color: #c0392b;
+}
+
+footer {
+    background-color: #222;
+    color: #aaa;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+.loading, .error, .no-data {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: #666;
+}
+
+.atleta-container {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border-radius: 4px;
+    margin: 0.8rem 0;
+    border-left: 3px solid var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+.atleta-container {
+    background-color: #f8f9fa;
+    padding: 0.8rem;
+    border-radius: 6px;
+    margin: 0.8rem 0;
+    border-left: 4px solid var(--secondary-color);
+}
+
+.atleta-container strong {
+    font-size: 0.9rem;
+    color: #555;
+    display: block;
+    margin-bottom: 0.4rem;
+}
+
+.lista-inscritos {
+    list-style: none; /* Remove as bolinhas padrão */
+    padding-left: 0;
+}
+
+.lista-inscritos li {
+    font-size: 0.9rem;
+    color: #333;
+    padding: 0.2rem 0;
+    border-bottom: 1px dashed #e1e8f5;
+}
+
+.lista-inscritos li:last-child {
+    border-bottom: none; /* Remove a linha do último item */
+}
